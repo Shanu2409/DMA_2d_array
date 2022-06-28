@@ -35,5 +35,14 @@ int main(){
 		cout<<endl;
 	}
 	
+	//freeing the space from heap memory 
+	//deleting child or column
+	for(int i =0; i<r; i++){
+		delete [] arr[i]; 
+	}
+	
+	//deleting row or parent
+	delete []arr;
+	
 	return 0;
 }
