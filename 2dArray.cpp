@@ -34,6 +34,13 @@ int main(){
 		}
 		cout<<endl;
 	}
+
+        //deleting the memory from heap..
+        for(int i =0; i<n; i++){
+		delete []arr[i];
+
+        delete []arr;
+	}
 	
 	return 0;
 }
